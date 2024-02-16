@@ -1,9 +1,9 @@
 package Oppgave_3;
 
-public class SelectionSort {
+public class SelectionSorter {
 
 	
-	public static <T extends Comparable<? super T>> void selectionSort(T[] arr) {
+	public static <T extends Comparable<? super T>> void sort(T[] arr) {
 		// step 1: start til venstre i tab. opprett smallest som index pos med minste
 		// verdi.
 		// step 2: gå igjennom tabellen og let etter mindre verdi. oppdater smallest

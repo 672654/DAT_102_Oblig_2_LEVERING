@@ -2,7 +2,7 @@ package Oppgave_3;
 
 public class MergeSorter {
 	
-	public static <T extends Comparable<? super T>> void mergeSort(T[] arr) {
+	public static <T extends Comparable<? super T>> void sort(T[] arr) {
 
 		int length = arr.length;
 		if (length <= 1) { // base
@@ -25,8 +25,8 @@ public class MergeSorter {
 				j++;
 			}
 		}
-		mergeSort(leftArr);
-		mergeSort(rightArr);
+		sort(leftArr);
+		sort(rightArr);
 		merge(leftArr, rightArr, arr);
 	}
 

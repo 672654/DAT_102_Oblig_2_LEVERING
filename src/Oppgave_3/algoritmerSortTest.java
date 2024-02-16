@@ -23,7 +23,7 @@ class algoritmerSortTest {
 	void testInsertionSort() {
 		assertNotEquals(tab[0], sortertTab[0]);
 
-		algoritmerSort.insertionSort(tab);
+		InsertionSorter.insertionSort(tab);
 		assertEquals(tab[tab.length - 1], 9);
 
 		for (int i = 0; i < tab.length; i++) {
@@ -35,7 +35,7 @@ class algoritmerSortTest {
 	void testSelectionSort() {
 		assertNotEquals(tab[0], sortertTab[0]);
 
-		algoritmerSort.selectionSort(tab);
+		SelectionSorter.sort(tab);
 		assertEquals(tab[tab.length - 1], 9);
 
 		for (int i = 0; i < tab.length; i++) {
@@ -46,7 +46,7 @@ class algoritmerSortTest {
 	@Test
 	void testQuickSort() {
 		assertNotEquals(tab[0], sortertTab[0]);
-		algoritmerSort.quickSort(tab, 0, tab.length - 1);
+		QuickSorter.sortIteratively(tab, 0, tab.length - 1);
 		assertEquals(tab[tab.length - 1], 9);
 
 		for (int i = 0; i < tab.length; i++) {
@@ -57,7 +57,7 @@ class algoritmerSortTest {
 	@Test
 	void testMergeSort() {
 		assertNotEquals(tab[0], sortertTab[0]);
-		algoritmerSort.mergeSort(tab);
+		MergeSorter.sort(tab);
 		assertEquals(tab[tab.length - 1], 9);
 
 		for (int i = 0; i < tab.length; i++) {

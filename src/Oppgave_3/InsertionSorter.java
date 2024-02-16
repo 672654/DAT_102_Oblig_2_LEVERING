@@ -1,6 +1,6 @@
 package Oppgave_3;
 
-public class InsertionSort {
+public class InsertionSorter {
 
 	static <T extends Comparable<? super T>> void insertionSort(T[] arr) {
 		// 1: første element er sortert. Begynn i index 0+1. opprett variabel med index
