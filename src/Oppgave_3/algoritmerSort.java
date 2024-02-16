@@ -127,7 +127,6 @@ public class algoritmerSort {
 		float c = (float) (averageDuration / (Math.pow(array.length, 2)));
 		long teoretiskTid = (long) (c * (Math.pow(array.length, 2)));
 		
-		//System.out.print("N  		-  Antall Maalinger -	Gj.snitt tid  -  Teoretisk tid:\n");
 		System.out.println(
 					array.length + " 		-  " + numberOfLoops + "		    -	" + averageDuration + "	      -	 " + teoretiskTid);
 		
